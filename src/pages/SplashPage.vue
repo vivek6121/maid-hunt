@@ -3,15 +3,9 @@
     <div class="column flex-center">
       <!-- Logo Placeholder -->
       <q-img
-        src="src/assets/quasar-logo-vertical.svg"
-        style="width: 120px; height: 120px"
+        src="src/assets/maid_hunt_logo.png"
+        style="width: 300px; height: 300px"
       />
-
-      <!-- App Name -->
-      <div class="text-h5 q-mt-md">MaidHunt</div>
-
-      <!-- Tagline -->
-      <div class="text-subtitle2 q-mt-xs">Find trusted maids in your area</div>
     </div>
   </q-page>
 </template>
@@ -26,7 +20,7 @@ const router = useRouter()
 onMounted(() => {
   setTimeout(() => {
     router.push('/login')
-  }, 1000)
+  }, 2000)
 })
 </script>
 
