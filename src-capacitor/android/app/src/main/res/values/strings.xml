@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">MaidHunt</string>
+    <string name="title_activity_main">MaidHunt</string>
+    <string name="package_name">com.maidhunt.app</string>
+    <string name="custom_url_scheme">com.maidhunt.app</string>
+</resources>
