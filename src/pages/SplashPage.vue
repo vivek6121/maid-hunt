@@ -2,11 +2,7 @@
   <q-page class="flex flex-center bg-primary text-white">
     <div class="column flex-center">
       <!-- Logo Placeholder -->
-      <q-img
-        :src="logo"
-        style="width: 300px; height: 300px"
-        contain
-      />
+      <q-img :src="logo" style="width: 300px; height: 300px" contain />
     </div>
   </q-page>
 </template>
@@ -14,7 +10,7 @@
 <script setup>
 import { onMounted } from 'vue'
 import { useRouter } from 'vue-router'
-import logo from 'assets/maid_hunt_logo.png' 
+import logo from 'assets/maid_hunt_logo.png'
 
 const router = useRouter()
 

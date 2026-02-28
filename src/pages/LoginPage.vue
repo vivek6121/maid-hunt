@@ -1,7 +1,6 @@
 <template>
   <q-page class="flex flex-center bg-grey-2">
-    <q-card class="column q-pa-lg" flat bordered style="width: 90%; max-width: 400px;">
-
+    <q-card class="column q-pa-lg" flat bordered style="width: 90%; max-width: 400px">
       <!-- App Logo -->
       <div class="row justify-center q-pb-sm">
         <q-img
@@ -13,9 +12,7 @@
       </div>
 
       <!-- Login Heading -->
-      <div class="text-h5 text-center q-mb-lg text-weight-medium">
-        Login to MaidHunt
-      </div>
+      <div class="text-h5 text-center q-mb-lg text-weight-medium">Login to MaidHunt</div>
 
       <!-- Mobile Number Input -->
       <q-input
@@ -26,8 +23,8 @@
         maxlength="10"
         lazy-rules
         :rules="[
-          val => !!val || 'Mobile number is required',
-          val => val.length === 10 || 'Enter valid 10 digit number'
+          (val) => !!val || 'Mobile number is required',
+          (val) => val.length === 10 || 'Enter valid 10 digit number',
         ]"
         class="q-mb-md"
       />
@@ -39,7 +36,7 @@
         label="Password"
         :type="isPwd ? 'password' : 'text'"
         lazy-rules
-        :rules="[val => !!val || 'Password is required']"
+        :rules="[(val) => !!val || 'Password is required']"
         class="q-mb-md"
       >
         <template v-slot:append>
@@ -66,7 +63,6 @@
         <q-btn flat label="Forgot Password?" @click="forgotPassword" />
         <q-btn flat label="Sign Up" @click="signup" />
       </div>
-
     </q-card>
   </q-page>
 </template>

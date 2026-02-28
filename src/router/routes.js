@@ -11,13 +11,13 @@ const routes = [
       { path: 'maid/dashboard', component: () => import('pages/maid/MaidDashboardPage.vue') },
 
       { path: 'search', component: () => import('pages/employer/SearchMaidsPage.vue') },
-      { path: 'maid/:id', component: () => import('pages/employer/MaidDetailsPage.vue') }
-    ]
+      { path: 'maid/:id', component: () => import('pages/employer/MaidDetailsPage.vue') },
+    ],
   },
   {
     path: '/:catchAll(.*)*',
-    component: () => import('pages/ErrorNotFound.vue')
-  }
+    component: () => import('pages/ErrorNotFound.vue'),
+  },
 ]
 
 export default routes

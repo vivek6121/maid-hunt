@@ -1,10 +1,8 @@
 <template>
   <q-page class="flex flex-center bg-grey-2">
-    <div class="column q-pa-md" style="width: 90%; max-width: 400px;">
+    <div class="column q-pa-md" style="width: 90%; max-width: 400px">
       <!-- Heading -->
-      <div class="text-h5 text-center q-mb-xl">
-        Select your role
-      </div>
+      <div class="text-h5 text-center q-mb-xl">Select your role</div>
 
       <!-- Maid Button -->
       <q-btn
